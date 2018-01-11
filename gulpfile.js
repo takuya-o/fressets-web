@@ -19,7 +19,7 @@ gulp.task('dist-clean', function() {
 
 gulp.task('dist-copy', function() {
 	return gulp
-		.src(['src/img/**'], {base: 'src'})
+		.src(['src/img/**', 'src/plugins/**', 'src/css/vendor/**', 'src/js/**'], {base: 'src'})
 		.pipe(gulp.dest('dist'))
 });
 
@@ -54,7 +54,7 @@ gulp.task('dist-js', function() {
 
 gulp.task('dist-css', function() {
 	return gulp
-		.src('src/css/*.css')
+		.src('src/css/**/*.css')
 		.pipe(sourcemaps.init())
 		.pipe(concat('bundle.min.css'))
 		.pipe(minifyCSS())
