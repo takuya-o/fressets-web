@@ -74,7 +74,7 @@ gulp.task('watch', function () {
 gulp.task('connect', ['dist'], function () {
 	return connect.server({
 		root: 'dist',
-		port: 8000,
+		port: 8080,
 	});
 });
 
