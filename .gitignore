@@ -3,3 +3,4 @@
 /aws_credentials.json
 /.awspublish-*
 npm-debug.log
+.DS_Store

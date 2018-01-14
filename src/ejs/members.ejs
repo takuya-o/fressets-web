@@ -1,0 +1,23 @@
+<%# vim: set filetype=html: %>
+<%- include('../00header.ejs', {title: 'Members'}) %>
+<section class="more-feature">
+  <div class="container">
+    <div class="page-header">
+      <h1 class="mb-4">
+        <t id="title"></t>
+      </h1>
+    </div>
+    <div class="members" id="member1">
+      <img class="member_photo mb-4" src="/img/member1.jpg">
+      <h3 class="mb-2"><t id="member1_title"></t>&nbsp;&nbsp;<t id="member1_name"></t></h3>
+      <t id="member1_bio"></t>
+    </div>
+    <hr class="my-4">
+    <div class="members" id="member2">
+      <img class="member_photo mb-4" src="/img/member2.jpg">
+      <h3 class="mb-2"><t id="member2_title"></t>&nbsp;&nbsp;<t id="member2_name"></t></h3>
+      <t id="member2_bio"></t>
+    </div>
+  </div>
+</section>
+<%- include('../99footer.ejs') %>

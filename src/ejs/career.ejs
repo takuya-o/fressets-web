@@ -1,0 +1,57 @@
+<%# vim: set filetype=html: %>
+<%- include('../00header.ejs', {title: 'Career'}) %>
+<section class="more-feature">
+  <div class="container">
+    <div class="page-header">
+      <h1 class="mb-4">
+        <t id="title"></t>
+      </h1>
+    </div>
+    <div class="description mb-4">
+      <t id="description"></t>
+    </div>
+    <h2><t id="job_type"></t></h2>
+    <hr class="my-4">
+    <div class="job1">
+      <h3 class="mb-3"><t id="job1_name"></t></h3>
+      <table class="table table-bordered">
+        <tr>
+          <th><t id="job1_description"></t></th>
+          <td><t id="job1_description_content"></t></td>
+        </tr>
+        <tr>
+          <th><t id="job1_requirements"></t></th>
+          <td>
+            <h4 class="my-2"><t id="job1_requirements_prerequisite"></t></h4>
+            <ul>
+              <li><t id="job1_requirements_prerequisite_content1"></t></li>
+              <li><t id="job1_requirements_prerequisite_content2"></t></li>
+              <li><t id="job1_requirements_prerequisite_content3"></t></li>
+              <li><t id="job1_requirements_prerequisite_content4"></t></li>
+            </ul>
+            <h4 class="my-2"><t id="job1_requirements_recommended"></t></h4>
+            <ul>
+              <li><t id="job1_requirements_recommended_content1"></t></li>
+              <li><t id="job1_requirements_recommended_content2"></t></li>
+              <li><t id="job1_requirements_recommended_content3"></t></li>
+              <li><t id="job1_requirements_recommended_content4"></t></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th><t id="working_conditions"></t></th>
+          <td>
+            <ul>
+              <li><t id="working_conditions_content1"></t></li>
+              <li><t id="working_conditions_content2"></t></li>
+              <li><t id="working_conditions_content3"></t></li>
+              <li><t id="working_conditions_content4"></t></li>
+              <li><t id="working_conditions_content5"></t></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+<%- include('../99footer.ejs') %>

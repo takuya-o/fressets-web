@@ -58,8 +58,8 @@ gulp.task('dist-js', function () {
 
 gulp.task('dist-css', function () {
 	return gulp
-	.src('src/css/**/*.css')
-			.pipe(sourcemaps.init())
+		.src('src/css/**/*.css')
+		.pipe(sourcemaps.init())
 		.pipe(concat('bundle.min.css'))
 		.pipe(minifyCSS())
 		.pipe(sourcemaps.write('.'))
@@ -84,7 +84,7 @@ gulp.task('i18n', () => {
 		.pipe(gulp.dest('dist/i18n'));
 });
 
-gulp.task('start', ['watch', 'connect']);
+gulp.task('start', ['watch', 'connect', 'i18n']);
 gulp.task('dist', ['dist-copy', 'dist-ejs', 'dist-js', 'dist-css']);
 gulp.task('default', ['dist']);
 gulp.task('translate', ['i18n']);

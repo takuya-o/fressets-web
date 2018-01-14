@@ -3,6 +3,8 @@
     "description": "　フレセッツ株式会社では、仮想通貨が好きな方を募集しています。以下の内容を確認いただき、お問い合わせよりご連絡ください。Wantedlyからもご応募可能です（Wantedly経由で申し込まれる方は、プロフィールにこれまでの経歴・実績を掲載しておいてください）。",
     "job_type": "募集職種",
     "job1_name": "エンジニア、プログラマ",
+    "company_name_content": "フレセッツ株式会社",
+    "address_abbr": "東京都文京区",
     "job1_description": "業務内容",
     "job1_description_content": "BtoB向けビットコインウォレットのバックエンドシステム全般、API設計開発",
     "job1_requirements": "応募資格",

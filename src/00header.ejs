@@ -63,13 +63,6 @@ var description = 'Fressets, Inc. is a Bitcoin / cryptocurrency / Blockchain tec
     <meta name="og:title" content="Fressets, Inc. | Bitcoin, Cryptocurrency, Blockchain startup" />
     <meta name="og:description" content="<%= description %>" />
     <meta name="og:image" content="https://fressets.com/img/logo.png" />
-    <script type="text/javascript">
-      // Fot open-in-a-new-tab.
-      $(document).ready(function() {
-      	$('a[data-newtab]').prepend('<span class="glyphicon glyphicon-new-window" style="font-size:80%;"></span> ');
-      	$('a[data-newtab]').attr('target', '_blank');
-      });
-    </script>
     <title>
       <% if(typeof fullTitle != 'undefined') { %>
         <%- fullTitle %>
@@ -166,11 +159,15 @@ var description = 'Fressets, Inc. is a Bitcoin / cryptocurrency / Blockchain tec
               </div>
               <div class="topbar-content">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <p>東京都文京区</p>
+                <p><t id="address_abbr"></t></p>
+              </div>
+              <div class="topbar-content">
+                <i class="fa fa-building" aria-hidden="true"></i>
+                <p><t id=company_name_content></t></p>
               </div>
             </div>
             <div class="col-sm-3 text-right">
-              <a href="#" class="btn btn-primary btn-default bold">Get Contact</a>
+              <a href="/#contact" class="btn btn-primary btn-default bold">Get Contact</a>
             </div>
           </div>
         </div>
@@ -190,19 +187,16 @@ var description = 'Fressets, Inc. is a Bitcoin / cryptocurrency / Blockchain tec
             <div class="navbar-collapse">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#body"><span class="sr-only"></span>Home</a>
+                  <a class="nav-link" href="/"><span class="sr-only"></span>Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#home-team"><span class="sr-only"></span>Members</a>
+                  <a class="nav-link" href="/about.html"><span class="sr-only"></span>Company</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#home-services"><span class="sr-only"></span>Business</a>
+                  <a class="nav-link" href="/members.html"><span class="sr-only"></span>Members</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#access"><span class="sr-only"></span>Access</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact"><span class="sr-only"></span>Contact</a>
+                  <a class="nav-link" href="/career.html"><span class="sr-only"></span>Carrer</a>
                 </li>
                 <li id="language" class="nav-item">
                   <select class="custom-select my-4">
