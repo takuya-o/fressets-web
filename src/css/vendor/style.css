@@ -8666,3 +8666,18 @@ body.pattern-05 {
   background-attachment: fixed;
   background-position: center;
 }
+table {
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-all;
+  }
+
+td {
+  width: 80%;
+}
+th {
+  width: 20%;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-all;
+  }
