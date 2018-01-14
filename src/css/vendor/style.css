@@ -400,7 +400,7 @@ a:hover, a:focus {
 }
 
 .bg-dark-navy {
-  background-color: #071e33 !important;
+  background-color: #ffffff !important;
 }
 
 .no-bg {
@@ -4744,7 +4744,6 @@ form.search_form .btn-small {
     margin-bottom: -45px;
   }
   .boxed-menu .main-nav a.nav-link {
-    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     padding: 35px 0px;
     margin: 0px 10px;
@@ -4761,9 +4760,7 @@ form.search_form .btn-small {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-  .boxed-menu .main-nav.navbar-sticky a.nav-link {
-    color: #ffffff;
+    border-bottom: 3px solid #e5e5e5;
   }
 }
 
@@ -6764,7 +6761,7 @@ ol.styled_list li {
 
 @media (min-width: 768px) {
   .more-feature-left .feature-details {
-    padding-left: 100px;
+    padding-left: 0;
   }
 }
 
@@ -7108,19 +7105,24 @@ ol.styled_list li {
 --> 5.7 FORM
 ================================================*/
 .home-form {
-  padding-top: 80px;
+  padding: 60px 0;
 }
 
 @media (min-width: 992px) {
   .home-form {
     margin-top: 50px;
-    padding-top: 100px;
   }
 }
 
 .home-form h2 {
   color: #ffffff;
-  margin-bottom: 50px;
+}
+.home-form p {
+  color: #ffffff;
+}
+
+.home-form .contact {
+  font-size: 24px;
 }
 
 .home-form form {
