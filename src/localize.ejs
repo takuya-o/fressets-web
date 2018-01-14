@@ -1,0 +1,44 @@
+<script>
+	/**
+	 * If get parameter "lang" is set, use it.
+	 * Else if check localStorage.language is set, use it.
+	 * Else refer browser language setting.
+	 * If it's neither "en-US" nor "ja-JP", use "en-US"(default).
+	 * language parameter is stored on localStorage.language after if-statement above.
+	 **/
+	var language = FRESSETS.f.getUrlParameter("lang");
+	if(language === void 0) {
+		if(localStorage.language === void 0) {
+			language = (window.navigator.languages && window.navigator.languages[0]) ||
+				window.navigator.language ||
+				window.navigator.userLanguage ||
+				window.navigator.browserLanguage;
+		} else {
+			language = localStorage.language;	
+		}
+	}
+	if(language !== "en-US" && language !== "ja-JP") {
+		language = "en-US";
+	}
+	localStorage.language = language;
+
+	$.getScript("/i18n/" + language + ".js").done(function() {
+		var pagename = location.href.match(".+/(.+?)\.[a-z]+([\?#;].*)?$");
+		if(pagename === null) {
+			pagename = "index";
+		} else {
+			pagename = pagename[1];
+		}
+
+		$("t").html(function() {
+			return eval (`i18n.${pagename}.${$(this).attr("id")}()`);
+		}).append('<dummy/>').find('dummy').unwrap().remove();
+	});
+
+	$(function() {
+		$("#language select").val(language);
+		$("#language select").on("change", function() {
+			location.href = location.href.substring(0, location.href.indexOf("?")) + "?lang=" + $(this).val();
+		});
+	})
+</script>

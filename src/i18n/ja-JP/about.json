@@ -1,0 +1,22 @@
+{
+    "title": "会社概要",
+    "company_name": "社名",
+    "company_name_content": "フレセッツ株式会社",
+    "board_members": "役員",
+    "board_member_name1": "日向 理彦",
+    "board_member_content1": "創業者、CEO 兼 CTO<br>[ <a href=\"members.html#member1\" target=\"_blank\">詳細</a> ]",
+    "board_member_name2": "余語 邦彦",
+    "board_member_content2": "創業者、CSO（経営戦略責任者）<br>[ <a href=\"members.html#member2\" target=\"_blank\">詳細</a> ]",
+    "date_of_the_establishment": "設立日",
+    "date_of_the_establishment_content": "2017年8月7日",
+    "address": "地図",
+    "address_content": "〒113-0001<br>東京都文京区白山1-31-9　小林ビル5階",
+    "contact_information": "連絡先",
+    "contact_information_content": "メールを送る",
+    "number_of_employees": "従業員数",
+    "number_of_employees_contents": "10人(2017年11月16日現在)",
+    "capital": "資本金（資本準備金含む）",
+    "capital_content": "25,972千円(2017年11月16日現在)",
+    "consulting_lawyer": "顧問弁護士",
+    "consulting_lawyer_content": "増島雅和（森・濱田松本法律事務所）"
+}

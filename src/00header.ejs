@@ -77,8 +77,83 @@ var description = 'Fressets, Inc. is a Bitcoin / cryptocurrency / Blockchain tec
         <%- locals.title %> | Fressets, Inc.
         <% } %>
       </title>
+      <script type="text/javascript">
+        /* Create Namespace */
+        if(typeof FRESSETS === "undefined") FRESSETS = {};
+        
+        FRESSETS.namespace = (ns_string) => {
+          let parts = ns_string.split('.'), parent = FRESSETS, i;
+          if (parts[0] === "FRESSETS") parts = parts.slice(1);
+          for(let i=0, l=parts.length; i<l; i++) {
+            if (parent[parts[i]] === void 0) parent[parts[i]] = {};
+            parent = parent[parts[i]];
+          }
+        };
+        
+        FRESSETS.common = {
+          functions: {
+            /**
+             * Get all HTTP GET parameters.
+             * @return {array} get parameters like ["fruit=orange", "computer=mac", "food=sushi"]
+             **/
+            getAllUrlParameter() {
+              return decodeURIComponent(window.location.search.substr(1)).split('&');
+            },
+        
+            /**
+             * Get HTTP GET parameter by key.
+             * @param {string} param / key of get param
+             * @return {string} get parameter like "orange"
+             **/
+            getUrlParameter(param) {
+              let url_variables = FRESSETS.common.functions.getAllUrlParameter(),
+                param_name,
+                i;
+              for (i = 0; i < url_variables.length; i++) {
+                param_name = url_variables[i].split('=');
+                if (param_name[0] === param) return param_name[1] === undefined ? true : param_name[1];
+              }
+            },
+        
+            /**
+             * send email to info by <a> tag.
+             * @param {string} address / email address
+             **/
+            email() {
+              function converter(M){
+                var str="", str_as="";
+                for(var i=0;i<M.length;i++){
+                  str_as = M.charCodeAt(i);
+                  str += String.fromCharCode(str_as + 1);
+                }
+                return str;
+              }
+              var link = String.fromCharCode(109,97,105,108,116,111,58)
+                + escape("") +
+                converter(String.fromCharCode(104,109,101,110,63,101,113,100,114,114,100,115,114,45,98,110,108,62,114,116,97,105,100,98,115,60))
+                + escape("") + "";
+              window.open(link, null, null);
+            },
+          },
+          values: {},
+          classes: {},
+          instances: {}
+        }
+        
+        FRESSETS.f = FRESSETS.common.functions;
+        FRESSETS.v = FRESSETS.common.values;
+        FRESSETS.c = FRESSETS.common.classes;
+        FRESSETS.i = FRESSETS.common.instances;
+        
+        // Fot open-in-a-new-tab.
+        $(document).ready(function() {
+          $('a[data-newtab]').prepend('<span class="glyphicon glyphicon-new-window" style="font-size:80%;"></span> ');
+          $('a[data-newtab]').attr('target', '_blank');
+        });
+      </script>
     </head>
     <body id="body" class="home-classic boxed-menu">
+      <%- include('./localize.ejs') %>
       <div class="mobile-sticky-header-overlay"></div>
       <!-- TOPBAR -->
       <div class="topbar">
@@ -128,6 +203,12 @@ var description = 'Fressets, Inc. is a Bitcoin / cryptocurrency / Blockchain tec
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact"><span class="sr-only"></span>Contact</a>
+                </li>
+                <li id="language" class="nav-item">
+                  <select class="custom-select my-4">
+                    <option value="en-US">English</option>
+                    <option value="ja-JP">日本語</option>
+                  </select>
                 </li>
               </ul>
             </div>

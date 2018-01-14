@@ -4754,7 +4754,7 @@ form.search_form .btn-small {
     border-bottom: 2px solid #ffffff;
   }
   .boxed-menu .main-nav a.nav-link:hover, .boxed-menu .main-nav a.nav-link:focus {
-    color: #ffffff;
+    color: #4ac8ed !important;
   }
   .boxed-menu .main-nav.navbar-sticky {
     max-width: 100%;
