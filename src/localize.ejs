@@ -31,6 +31,9 @@
   	}
   
   	$("t").html(function() {
+  			if (pagename == '#') {
+  				pagename = 'index';
+  			}
   		return eval (`i18n.${pagename}.${$(this).attr("id")}()`);
   	}).append('<dummy/>').find('dummy').unwrap().remove();
   });
