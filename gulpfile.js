@@ -85,8 +85,9 @@ gulp.task('i18n', () => {
 });
 
 gulp.task('start', ['watch', 'connect', 'i18n']);
-gulp.task('dist', ['dist-copy', 'dist-ejs', 'dist-js', 'dist-css']);
+gulp.task('dist', ['dist-copy', 'dist-ejs', 'dist-js', 'dist-css', 'i18n']);
 gulp.task('default', ['dist']);
 gulp.task('translate', ['i18n']);
 
-gulp.task('all', ['translate', 'dist', 'default', 'start'])
+gulp.task('all', ['translate', 'dist', 'default', 'start']);
+
