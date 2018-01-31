@@ -1,114 +1,212 @@
 <%# vim: set filetype=html: %>
-
 <%
 var description = 'Fressets, Inc. is a Bitcoin / cryptocurrency / Blockchain technology startup based at Tokyo, Japan.';
 %>
-
 <!DOCTYPE html>
 <html>
-	<head>
-		
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keyword" content="IT,computer,system,program,web" />
-		<meta name="description" content="<%= description %>" />
-		<meta name="author" content="Fressets, Inc." />
-		
-		<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="/img/favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		
-		<!-- Load CSS. -->
-		<link rel="stylesheet" href="/css/bundle.min.css" />
-		
-		<!-- Load JavaScript library. -->
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		
-		<!-- Load Bootstrap. -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		
-		<!-- Twitter card -->
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@fressets" />
-		<meta name="twitter:title" content="Fressets, Inc. | Bitcoin, Cryptocurrency, Blockchain startup" />
-		<meta name="twitter:description" content="<%= description %>" />
-		<meta name="twitter:image" content="https://fressets.com/img/logo.png" />
-		
-		<!-- Open Graph -->
-		<meta name="og:type" content="website" />
-		<meta name="og:title" content="Fressets, Inc. | Bitcoin, Cryptocurrency, Blockchain startup" />
-		<meta name="og:description" content="<%= description %>" />
-		<meta name="og:image" content="https://fressets.com/img/logo.png" />
-		
-		<script type="text/javascript">
-			// Fot open-in-a-new-tab.
-			$(document).ready(function() {
-				$('a[data-newtab]').prepend('<span class="glyphicon glyphicon-new-window" style="font-size:80%;"></span> ');
-				$('a[data-newtab]').attr('target', '_blank');
-			});
-		</script>
-		
-		<title>
-			<% if(typeof fullTitle != 'undefined') { %>
-				<%- fullTitle %>
-			<% } else { %>
-				<%- locals.title %> | Fressets, Inc.
-			<% } %>
-		</title>
-		
-	</head>
-	<body>
-		
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/">
-						<img src="/img/logo+text.png" alt="logo" style="height:25px;" />
-					</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbar-menu">
-					<ul class="nav navbar-nav">
-						<li class=""><a href="/about.html"><span class="glyphicon glyphicon-scale"></span> Company</a></li>
-						<li class="dropdown">
-							<a href="#services" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-pushpin"></span> Services <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">N/A</a></li>
-							</ul>
-						</li>
-						<li class=""><a href="#"><span class="glyphicon glyphicon-user"></span> Members</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="http://blog.fressets.com/" target="_blank"><span class="glyphicon glyphicon-pencil"></span> Blog</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Career</a></li>
-						<li><a href="/contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-		
-		<div class="container">
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keyword" content="IT,computer,system,program,web" />
+    <meta name="description" content="<%= description %>" />
+    <meta name="author" content="Fressets, Inc." />
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- PLUGINS CSS STYLE -->
+    <link href="/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/plugins/selectbox/select_option1.css" rel="stylesheet">
+    <link href="/plugins/slick/slick.css" rel="stylesheet" media="screen">
+    <link href="/plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
+    <link href="/plugins/prismjs/prism.css" rel="stylesheet">
+    <link href="/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="/plugins/fancybox/fancyMorph.css" rel="stylesheet" />
+    <link href="/plugins/selectbox/select_option1.css" rel="stylesheet">
+    <link href="/plugins/thin-line-icons/css/thin-line-icons.css" rel="stylesheet">
+    <link href="/plugins/isotope/isotope.min.css" rel="stylesheet">
+    <link href="/plugins/animate.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <!-- CUSTOM CSS -->
+    <link href="/css/bundle.min.css" rel="stylesheet">
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <script src="/plugins/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@fressets" />
+    <meta name="twitter:title" content="Fressets, Inc. | Bitcoin, Cryptocurrency, Blockchain startup" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:image" content="https://fressets.com/img/logo.png" />
+    <!-- Open Graph -->
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="Fressets, Inc. | Bitcoin, Cryptocurrency, Blockchain startup" />
+    <meta name="og:description" content="<%= description %>" />
+    <meta name="og:image" content="https://fressets.com/img/logo.png" />
+    <title>
+      <% if(typeof fullTitle != 'undefined') { %>
+        <%- fullTitle %>
+        <% } else { %>
+        <%- locals.title %> | Fressets, Inc.
+        <% } %>
+      </title>
+      <script type="text/javascript">
+        /* Create Namespace */
+        if(typeof FRESSETS === "undefined") FRESSETS = {};
+        
+        FRESSETS.namespace = (ns_string) => {
+          let parts = ns_string.split('.'), parent = FRESSETS, i;
+          if (parts[0] === "FRESSETS") parts = parts.slice(1);
+          for(let i=0, l=parts.length; i<l; i++) {
+            if (parent[parts[i]] === void 0) parent[parts[i]] = {};
+            parent = parent[parts[i]];
+          }
+        };
+        
+        FRESSETS.common = {
+          functions: {
+            /**
+             * Get all HTTP GET parameters.
+             * @return {array} get parameters like ["fruit=orange", "computer=mac", "food=sushi"]
+             **/
+            getAllUrlParameter() {
+              return decodeURIComponent(window.location.search.substr(1)).split('&');
+            },
+        
+            /**
+             * Get HTTP GET parameter by key.
+             * @param {string} param / key of get param
+             * @return {string} get parameter like "orange"
+             **/
+            getUrlParameter(param) {
+              let url_variables = FRESSETS.common.functions.getAllUrlParameter(),
+                param_name,
+                i;
+              for (i = 0; i < url_variables.length; i++) {
+                param_name = url_variables[i].split('=');
+                if (param_name[0] === param) return param_name[1] === undefined ? true : param_name[1];
+              }
+            },
+        
+            /**
+             * send email to info by <a> tag.
+             * @param {string} address / email address
+             **/
+            email() {
+              function converter(M){
+                var str="", str_as="";
+                for(var i=0;i<M.length;i++){
+                  str_as = M.charCodeAt(i);
+                  str += String.fromCharCode(str_as + 1);
+                }
+                return str;
+              }
+              var link = String.fromCharCode(109,97,105,108,116,111,58)
+                + escape("") +
+                converter(String.fromCharCode(104,109,101,110,63,101,113,100,114,114,100,115,114,45,98,110,108,62,114,116,97,105,100,98,115,60))
+                + escape("") + "";
+              window.open(link, null, null);
+            },
+          },
+          values: {},
+          classes: {},
+          instances: {}
+        }
+        
+        FRESSETS.f = FRESSETS.common.functions;
+        FRESSETS.v = FRESSETS.common.values;
+        FRESSETS.c = FRESSETS.common.classes;
+        FRESSETS.i = FRESSETS.common.instances;
+        
+        // Fot open-in-a-new-tab.
+        $(document).ready(function() {
+          $('a[data-newtab]').prepend('<span class="glyphicon glyphicon-new-window" style="font-size:80%;"></span> ');
+          $('a[data-newtab]').attr('target', '_blank');
+        });
+      </script>
+    </head>
+    <body id="body" class="home-classic boxed-menu">
+      <%- include('./localize.ejs') %>
+      <div class="mobile-sticky-header-overlay"></div>
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9">
+              <div class="topbar-content">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>info [-at-] fressets.com</p>
+              </div>
+              <div class="topbar-content">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p><t id="address_abbr"></t></p>
+              </div>
+              <div class="topbar-content">
+                <i class="fa fa-building" aria-hidden="true"></i>
+                <p><t id=company_name_content></t></p>
+              </div>
+            </div>
+            <div class="col-sm-3 text-right">
+              <a href="/#contact" class="btn btn-primary btn-default bold">Get Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TOPBAR ENDS-->
+      <!-- HEADER -->
+      <header id="pageTop" class="header">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md main-nav bg-dark-navy bordered">
+          <div class="container">
+            <button class="navbar-toggler navbar-toggler-right">
+              <span class="burger-menu icon-toggle"><i class="fa fa-bars"></i></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="/img/logo.svg" alt="logo" style="height:50px;">
+            </a>
+            <div class="navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/"><span class="sr-only"></span>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html"><span class="sr-only"></span>Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/members.html"><span class="sr-only"></span>Members</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/career.html"><span class="sr-only"></span>Carrer</a>
+                </li>
+                <li id="language" class="nav-item">
+                  <select class="custom-select my-4">
+                    <option value="en-US">English</option>
+                    <option value="ja-JP">日本語</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="main-wrapper home">

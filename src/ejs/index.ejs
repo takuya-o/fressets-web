@@ -1,57 +1,216 @@
 <%# vim: set filetype=html: %>
-
 <%- include('../00header.ejs', {fullTitle: 'Fressets, Inc. | Bitcoin / Cryptocurrency / Blockchain startup'}) %>
-
-<div id="home-eyecatch">
-	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-11"><h1><span>Fressets, Inc.</span></h1></div>
-	</div>
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-10">
-			<ul>
-				<li><div><span class="glyphicon glyphicon-bitcoin"></span> Cryptocurrency Software Products</div></li>
-				<li><div><span class="glyphicon glyphicon-cog"></span> Cryptocurrency Consulting / R&amp;D</div></li>
-				<li><div><span class="glyphicon glyphicon-phone"></span> Other System Developments / Consulting</div></li>
-			</ul>
-		</div>
-	</div>
+<!-- BANNER SLIDER CAROUSEL -->
+<section class="banner">
+  <div id="banner-slider" class="element_row">
+    <!-- slider one -->
+    <div class="item ">
+      <div class="bg-image-holder" style="background-image: url('img/home/slider/sl3.jpg');">
+        <div class="slider-caption container">
+          <div class="caption-content caption-right">
+            <h1 class="bold text-white" data-animation="customFadeInUp" data-delay="0.1s">Cryptocurrency Software <br>
+              Products</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider two -->
+    <div class="item">
+      <div class="bg-image-holder" style="background-image: url('img/home/slider/sl1.jpg');">
+        <div class="slider-caption container">
+          <div class="caption-content caption-right">
+            <h1 class="bold" data-animation="customFadeInUp" data-delay="0.1s">Cryptocurrency <br >
+              Consulting /
+              R&D</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider three -->
+    <div class="item">
+      <div class="bg-image-holder" style="background-image: url('img/home/slider/sl3a.jpg');">
+        <div class="slider-caption container">
+          <div class="caption-content">
+            <h1 class="bold text-white" data-animation="customFadeInUp" data-delay="0.1s">Other System <br>
+              Developments / Consulting</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- WHY CHOOSE US -->
+<section class="more-feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="more-feature-left">
+          <div class="sectionTitle">
+            <h2>News</h2>
+          </div>
+          <div class="more-features">
+            <div class="feature-details mb-4">
+              <h4>August 7, 2017</h4>
+              <p>Incorporated.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/fressets" height="600">Tweets by @fressets</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- OUR TEAM -->
+<section class="home-team" id="home-team">
+  <div class="container">
+    <!-- section title -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="sectionTitle text-center">
+          <h2>Board Members</h2>
+          <p>We are Established in August, 2017. </p>
+        </div>
+      </div>
+    </div>
+    <!-- section title ends -->
+    <div class="row">
+      <div class="offset-lg-2 col-6 col-lg-3">
+        <div class="card card-style2 team-card">
+          <div class="card_img">
+            <img class="img-full" data-original="/img/member1.jpg" alt="Card image">
+            <div class="hover-overlay effect-scale">
+              <a href="https://www.facebook.com/hyugam" class="overlay_icon" target="_blank"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/masahiko-hyuga-2a51b2a5" class="overlay_icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="card-block">
+            <a href="/members.html#member1">
+              <h4 class="card-title"><t id="member1_name"></t></h4>
+            </a>
+            <span class=""><t id="member1_title"></t></span>
+          </div>
+        </div>
+      </div>
+      <div class="offset-lg-2 col-6 col-lg-3">
+        <div class="card card-style2 team-card">
+          <div class="card_img">
+            <img class="img-full" data-original="/img/member2.jpg" alt="Card image">
+            <div class="hover-overlay effect-scale">
+              <a href="https://www.facebook.com/yogo.kuni" class="overlay_icon" target="_blank"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/kuni-yogo-4782135" class="overlay_icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="card-block">
+            <a href="/members.html#member2">
+              <h4 class="card-title"><t id="member2_name"></t></h4>
+            </a>
+            <span class=""><t id="member2_title"></t></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- OUR PORTFOLIO -->
+<section class="home-services" id="home-services">
+  <div class="container">
+    <!-- section title -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="sectionTitle text-center">
+          <h2><t id="service_title"></t></h2>
+          <p><t id="service_desc"></t></p>
+        </div>
+      </div>
+    </div>
+    <!-- section title ends -->
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="media-box">
+          <div class="media-icon">
+            <i class="fa fa-line-chart"></i>
+          </div>
+          <div class="media-content">
+            <p>
+              <h4><t id="service_title1"></t></h4>
+            </p>
+            <p>
+              <t id="service_name1"></t>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="media-box">
+          <div class="media-icon">
+            <i class="fa fa-credit-card"></i>
+          </div>
+          <div class="media-content">
+            <p>
+              <h4><t id="service_title2"></t></h4>
+            </p>
+            <p>
+              <t id="service_name2"></t>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="media-box">
+          <div class="media-icon">
+            <i class="fa fa-bar-chart-o"></i>
+          </div>
+          <div class="media-content">
+            <p>
+              <h4><t id="service_title3"></t></h4>
+            </p>
+            <p>
+              <t id="service_name3"></t>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home-services" id="access">
+  <div class="container">
+    <!-- section title -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="sectionTitle text-center">
+          <h2><t id="address_title"></t></h2>
+          <p><t id="address_content"></t></p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12957.387301160456!2d139.7363687460805!3d35.71768797000214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188db59c84915b%3A0xf463050751a625bc!2z44CSMTEzLTAwMDEg5p2x5Lqs6YO95paH5Lqs5Yy655m95bGx77yR5LiB55uu77yT77yRIOWwj-ael-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1500850460816" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<!-- BRANDS -->
+<div class="home-form bg-navy" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="sectionTitle text-center">
+          <h2>Contact Us</h2>
+          <p>Please send us an email to the following address.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="contact my-5"> info [-at-] fressets.com </p>
+      </div>
+      <div class="col-12 text-center">
+        <p>(Please replace [-at-] to '@' character.)</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="page-header">
-	<h2>
-		<span class="decoration-bar-1"></span>
-		<span class="decoration-bar-2"></span>
-		<span class="decoration-bar-3"></span>
-		News
-	</h2>
-</div>
-
-<div class="row">
-	<div class="col-md-8">
-		<table id="news" class="table table-bordered">
-			<caption>
-				<p class="text-center">Recent Activity</p>
-			</caption>
-			<tbody>
-				<tr>
-					<th style="width:10em;">Date</th>
-					<th style="width:auto;">Content</th>
-				</tr>
-				<tr>
-					<th>August 7, 2017</th>
-					<td>Incorporated.</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-4">
-		<a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/fressets" height="600">Tweets by @fressets</a>
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	</div>
-</div>
-
-
 <%- include('../99footer.ejs') %>
-

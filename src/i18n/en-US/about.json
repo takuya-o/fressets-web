@@ -1,0 +1,23 @@
+{
+    "title": "About Our Company",
+    "company_name": "Company Name",
+    "company_name_content": "Fressets, Inc.",
+    "address_abbr": "Bunkyo-ku, Tokyo, Japan",
+    "board_members": "Board members",
+    "board_member_name1": "Masahiko Hyuga",
+    "board_member_content1": "Founder, Chief Executive & Technology Officer<br>[ <a href=\"members.html#member1\" target=\"_blank\">Detail</a> ]",
+    "board_member_name2": "Kunihiko Yogo",
+    "board_member_content2": "Founder, Chief Strategy Officer<br>[ <a href=\"members.html#member2\" target=\"_blank\">Detail</a> ]",
+    "date_of_the_establishment": "Date of the establishment",
+    "date_of_the_establishment_content": "August 7, 2017",
+    "address": "Address",
+    "address_content": "Postal Code: 113-0001<br>5F, Kobayashi Bldg, 1-31-9, Hakusan, Bunkyo-ku, Tokyo, Japan",
+    "contact_information": "Contact information",
+    "contact_information_content": "Send Email",
+    "number_of_employees": "Number of employees",
+    "number_of_employees_contents": "10 (as of Norvember 16, 2017)",
+    "capital": "Capital",
+    "capital_content": "25,972,000 yen (as of Norvember 16, 2017)",
+    "consulting_lawyer": "Consulting lawyer",
+    "consulting_lawyer_content": "Masakazu Masushima (Mori Hamadamatsumoto Law Offices)"
+}
