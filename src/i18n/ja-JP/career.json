@@ -9,10 +9,9 @@
     "job1_description_content": "BtoB向けビットコインウォレットのバックエンドシステム全般、API設計開発",
     "job1_requirements": "応募資格",
     "job1_requirements_prerequisite": "必須条件",
-    "job1_requirements_prerequisite_content1": "Javaの経験",
-    "job1_requirements_prerequisite_content2": "チームでの開発に携わった経験",
-    "job1_requirements_prerequisite_content3": "Git等のバージョン管理ツールの経験",
-    "job1_requirements_prerequisite_content4": "SQLの経験",
+    "job1_requirements_prerequisite_content1": "チームでの開発に携わった経験",
+    "job1_requirements_prerequisite_content2": "Git等のバージョン管理ツールの経験",
+    "job1_requirements_prerequisite_content3": "SQLの経験",
     "job1_requirements_recommended": "歓迎スキル",
     "job1_requirements_recommended_content1": "IT企業もしくは企業のIT部門でのプロジェクトマネージメント業務経験",
     "job1_requirements_recommended_content2": "論理的思考能力、多様なステークホルダーと合意形成できるコミュニケーション能力や推進力",
@@ -23,5 +22,5 @@
     "working_conditions_content2": "勤務地：文京区白山オフィス（文京区白山1-31-9小林ビル5階）（要相談）",
     "working_conditions_content3": "勤務時間：要相談",
     "working_conditions_content4": "休日・休暇：完全週休2日制（土・日）、祝日、有給休暇、年末年始、慶弔休暇",
-    "working_conditions_content5": "Wantedly：https://www.wantedly.com/projects/167403"
+    "working_conditions_content5": "<a href='https://www.wantedly.com/projects/167403'>Wantedly</a>"
 }
