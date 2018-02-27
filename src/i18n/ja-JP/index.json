@@ -1,4 +1,12 @@
 {
+    "news1": "会社を設立しました。",
+    "news1_date": "2017年7月7日",
+    "news2": "",
+    "news2_date": "",
+    "news3": "",
+    "news3_date": "",
+    "company_name_origin": "社名の由来",
+    "company_name_origin_content": "<span style='text-decoration: underline;'>Fr</span>ictionl<span style='text-decoration: underline;'>ess</span> A<span style='text-decoration: underline;'>ssets</span>（摩擦のない資産）が、弊社の社名の由来です。デジタル資産を瞬時に摩擦無く移動できるインフラを構築することが弊社の使命です。",
     "heading1": "Cryptocurrency Software Products",
     "heading2": "Cryptocurrency Consulting / R&amp;D",
     "heading3": "Other System Developments / Consulting",
