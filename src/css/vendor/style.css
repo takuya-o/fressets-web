@@ -6748,6 +6748,10 @@ ol.styled_list li {
   color: #4ac8ed;
 }
 
+.more-feature-right .more-features {
+  padding-top: 40px;
+}
+
 @media (min-width: 768px) {
   .more-feature-left .feature-icon {
     position: absolute;
