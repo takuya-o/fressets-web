@@ -49,15 +49,12 @@
         </div>
         <div class="more-features">
           <div class="feature-details mb-4">
-            <% i = 0; %>
-            <% while(++i) { %>
-              <% if(eval(`i18n.index.news${i}()` === void 0) { %>
-              <% break; %>
-            <% } %>
-            <% for (; i>0; --i) { %>
-              <h4><%= eval(`i18n.index.news${i}_date()`) %></h4>
-              <p><%= eval(`i18n.index.news${i}()`) %></p>
-            <% } %>
+            <h4><t id="news3_date"></t></h4>
+            <p><t id="news3"></t></p>
+            <h4><t id="news2_date"></t></h4>
+            <p><t id="news2"></t></p>
+            <h4><t id="news1_date"></t></h4>
+            <p><t id="news1"></t></p>
           </div>
         </div>
       </div>
