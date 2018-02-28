@@ -1,10 +1,10 @@
 {
-    "news1": "August 7, 2017",
     "news1_date": "Incorporated.",
-    "news2": "Allocated new shares to a third party(22,972,950 yen).",
+    "news1": "August 7, 2017",
     "news2_date": "September 29, 2017",
-    "news3": "Allocated new shares to a third party(35,000,000 yen).",
+    "news2": "Allocated new shares to a third party(22,972,950 yen).",
     "news3_date": "February 28, 2018",
+    "news3": "Allocated new shares to a third party(35,000,000 yen).",
     "company_name_origin": "The origin of our name",
     "company_name_origin_content": "Our company name comes from <span style='text-decoration: underline;'>Fr</span>ictionl<span style='text-decoration: underline;'>ess</span> A<span style='text-decoration: underline;'>ssets</span>. Our mission is to build the infrastructure for transferring digital assets instantly without friction.",
     "heading1": "Cryptocurrency Software Products",
