@@ -6763,6 +6763,10 @@ ol.styled_list li {
   display: inline-block;
 }
 
+.more-feature-left .feature-details:nth-child(n+2) {
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
   .more-feature-left .feature-details {
     padding-left: 0;
