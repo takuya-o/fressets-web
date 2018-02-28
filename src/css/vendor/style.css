@@ -6763,7 +6763,7 @@ ol.styled_list li {
   display: inline-block;
 }
 
-.more-feature-left .feature-details:nth-child(n+2) {
+.news:nth-child(n+2) {
   margin-top: 20px;
 }
 
